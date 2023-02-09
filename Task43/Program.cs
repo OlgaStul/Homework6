@@ -25,8 +25,8 @@ int b2 = GetNumber("Введите b2 = ");
 if(k1 == k2) Console.WriteLine("Прямые параллельны");
 else
 {
-    int x = (b2 - b1) / (k1 - k2);
-    int y = k1 * x + b1;
+    double x = (double)(b2 - b1) / (k1 - k2); // явное приведение типов
+    double y = k1 * x + b1;
     Console.WriteLine($"Прямые пересекаются в точке х = {x}, y = {y}");
 }
 
